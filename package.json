@@ -1,0 +1,27 @@
+{
+  "name": "ny-app",
+  "version": "1.0.0",
+  "description": "Sistema de gestión de citas para barberías desarrollado con Node.js, Express, MySQL, HTML, CSS y JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.8.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "globals": "^16.0.0"
+  }
+}
