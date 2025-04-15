@@ -20,4 +20,4 @@ NY Barber App permite a clientes reservar citas con barberos de manera rápida y
 1. Clona el repositorio:
 ```bash
 git clone https://github.com/BrandonAlexisDev22/NY-Barber-App.git
-cd NY-Barber-App
+cd NY-Barber-App```
