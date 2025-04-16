@@ -12,7 +12,6 @@ NY Barber App permite a clientes reservar citas con barberos de manera rápida y
 - Express
 - MySQL
 - HTML/CSS/JavaScript (Frontend)
-- Bootstrap
 - Dotenv
 
 ## ⚙️ Instalación y ejecución
