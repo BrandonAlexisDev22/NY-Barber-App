@@ -18,35 +18,33 @@
 
     <!-- Favicon, estilos y fuentes -->
     <link rel="icon" href="./img/barber-icon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Special+Gothic+Condensed+One&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header class="header">
         <div class="container-img">
             <img src="./img/barber-icon.png" alt="Barber-shop-img">
         </div>
-        <nav class="nav-section">
+
+        <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">☰</button>
+        <div id="overlay" class="overlay"></div>
+
+        <nav class="nav-section" id="nav">
             <ul class="nav-links">
-                <li>
-                    <a href="#">Servicios</a>
-                </li>
-                <li>
-                    <a href="#">Barberos</a>
-                </li>
-                <li>
-                    <a href="#">Precios</a>
-                </li>
-                <li>
-                    <a href="#">Contacto</a>
-                </li>
-                <li>
-                    <a href="#">Otros Productos</a>
-                </li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Barberos</a></li>
+                <li><a href="#">Precios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">
+                        <span class="btn-style">Otros Productos</span>
+                    </a></li>
             </ul>
         </nav>
     </header>
@@ -54,34 +52,40 @@
         <section class="hero-container">
             <div class="img-container">
                 <h1 class="hero-title">Belleza al mejor estilo New York Barber</h1>
-                <p class="lead-text">No dudes en confiar en nosotros, somos un excelente equipo de trabajo dedicado a ofrecerte la mejor experiencia en cortes de cabello, cuidado de la barba y estilo personal. Nuestra pasión y compromiso nos convierten en la mejor opción para resaltar tu imagen.</p>
-                <button type="submit">Agendar Cita</button>
+                <p class="lead-text">No dudes en confiar en nosotros, somos un excelente equipo de trabajo dedicado a
+                    ofrecerte la mejor experiencia en cortes de cabello, cuidado de la barba y estilo personal. Nuestra
+                    pasión y compromiso nos convierten en la mejor opción para resaltar tu imagen.</p>
+                <a href="#" class="btn-agendar">Agendar Turno</a>
             </div>
         </section>
-    
+
         <section class="our-services">
             <h2 class="our-services-title">Nuestros Servicios</h2>
             <div class="services">
                 <div class="card">
-                    <div class="container-img">
-                        <img src="#" alt="">
+                    <div class="container-img-card">
+                        <img src="" alt="">
                     </div>
-                    <h3 class="service-title">Cortes de pelo</h3>
-                    <p class="description">Ofrecemos cortes de pelo modernos y clásicos adaptados a tu estilo y personalidad, realizados por barberos expertos que garantizan un acabado impecable.</p>
+                    <h3 class="service-title">Cortes de Pelo</h3>
+                    <p class="description">Ofrecemos cortes modernos y clásicos adaptados a tu estilo y personalidad.
+                        Nuestros barberos expertos garantizan un acabado impecable que te hará destacar.</p>
                 </div>
                 <div class="card">
-                    <div class="container-img">
-                        <img src="#" alt="">
+                    <div class="container-img-card">
+                        <img src="./img/beard.jpg" alt="Corte de barba">
                     </div>
-                    <h3 class="service-title">Cortes de barba</h3>
-                    <p class="description">Realizamos cortes de barba con precisión y estilo, utilizando técnicas avanzadas para garantizar un look impecable y personalizado que resalte tu personalidad.</p>
+                    <h3 class="service-title">Cortes de Barba</h3>
+                    <p class="description">Realizamos cortes de barba con precisión y estilo, utilizando técnicas
+                        avanzadas para garantizar un look impecable y personalizado que resalte tu imagen.</p>
                 </div>
                 <div class="card">
-                    <div class="container-img">
-                        <img src="#" alt="">
+                    <div class="container-img-card">
+                        <img src="./img/treatment.jpg" alt="Tratamientos capilares">
                     </div>
-                    <h3 class="service-title">Estilos y tratamientos</h3>
-                    <p class="description">Brindamos tratamientos capilares y asesoramiento en estilo para que siempre luzcas impecable. Nuestro equipo está capacitado para ofrecerte soluciones personalizadas que se adapten a tus necesidades.</p>
+                    <h3 class="service-title">Estilos y Tratamientos</h3>
+                    <p class="description">Brindamos tratamientos capilares y asesoramiento en estilo para que siempre
+                        luzcas impecable. Nuestro equipo ofrece soluciones personalizadas adaptadas a tus necesidades.
+                    </p>
                 </div>
             </div>
         </section>
@@ -115,36 +119,39 @@
         <section class="client-testimonials">
             <h2 class="testimonials-title">Testimonios de Clientes</h2>
             <div class="testimonials-container">
-            <div class="testimonial-card">
-                <div class="profile">
-                <img src="./img/profile1.jpg" alt="Foto de perfil de Carlos M." class="profile-img">
-                <p class="client-name">Carlos M.</p>
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="./img/profile1.jpg" alt="Foto de perfil de Carlos M." class="profile-img">
+                        <p class="client-name">Carlos M.</p>
+                    </div>
+                    <p class="testimonial-text">"El mejor lugar para un corte de cabello. Los barberos son muy
+                        profesionales y el ambiente es increíble. ¡Recomendado al 100%!"</p>
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
                 </div>
-                <p class="testimonial-text">"El mejor lugar para un corte de cabello. Los barberos son muy profesionales y el ambiente es increíble. ¡Recomendado al 100%!"</p>
-                <div class="rating">
-                ⭐⭐⭐⭐⭐
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="./img/profile2.jpg" alt="Foto de perfil de Luis R." class="profile-img">
+                        <p class="client-name">Luis R.</p>
+                    </div>
+                    <p class="testimonial-text">"Siempre salgo satisfecho con mi corte de barba. La atención al detalle
+                        es impresionante. ¡Gracias NY Barber Shop!"</p>
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
                 </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="profile">
-                <img src="./img/profile2.jpg" alt="Foto de perfil de Luis R." class="profile-img">
-                <p class="client-name">Luis R.</p>
+                <div class="testimonial-card">
+                    <div class="profile">
+                        <img src="./img/profile3.jpg" alt="Foto de perfil de Ana G." class="profile-img">
+                        <p class="client-name">Ana G.</p>
+                    </div>
+                    <p class="testimonial-text">"Un servicio excepcional y un equipo muy amable. Definitivamente mi
+                        barbería favorita en la ciudad."</p>
+                    <div class="rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
                 </div>
-                <p class="testimonial-text">"Siempre salgo satisfecho con mi corte de barba. La atención al detalle es impresionante. ¡Gracias NY Barber Shop!"</p>
-                <div class="rating">
-                ⭐⭐⭐⭐⭐
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="profile">
-                <img src="./img/profile3.jpg" alt="Foto de perfil de Ana G." class="profile-img">
-                <p class="client-name">Ana G.</p>
-                </div>
-                <p class="testimonial-text">"Un servicio excepcional y un equipo muy amable. Definitivamente mi barbería favorita en la ciudad."</p>
-                <div class="rating">
-                ⭐⭐⭐⭐⭐
-                </div>
-            </div>
             </div>
         </section>
         <section class="agend-cite">
@@ -179,4 +186,18 @@
         </div>
     </footer>
 </body>
+<script>
+    const btn = document.getElementById('hamburger-btn');
+    const nav = document.getElementById('nav');
+    const overlay = document.getElementById('overlay');
+
+    btn.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+        btn.classList.toggle('active');
+        btn.textContent = btn.classList.contains('active') ? '✖' : '☰';
+    });
+
+</script>
+
 </html>
