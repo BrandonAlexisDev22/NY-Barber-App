@@ -363,14 +363,21 @@
   color: var(--black);
   margin: 0 15px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 40px;
   transition: color 0.3s ease;
 }
 
-.container-social a:hover {
-  color: #ff5722;
+.container-social .icon-facebook:hover {
+  color: #2238ff;
 }
 
+.container-social .icon-instagram:hover{
+  color: #E1306C;
+}
+
+.container-social .icon-twitter:hover{
+  color:  #1DA1F2;
+}
 .container-rights {
   margin-top: 30px;
 }
