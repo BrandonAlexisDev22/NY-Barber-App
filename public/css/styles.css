@@ -16,7 +16,6 @@
     font-size: 16px;
   }
   
-  /* ========== HEADER ========== */
   .header {
     width: 100%;
     background-color: var(--white);
@@ -63,7 +62,6 @@
     height: auto;
   }
   
-  /* Botón hamburguesa */
   .hamburger {
     font-size: 2rem;
     background: none;
@@ -267,7 +265,6 @@
     background-image: url("https://scontent.feoh3-1.fna.fbcdn.net/v/t39.30808-6/411290284_6901708433281052_708064317674073495_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pYTndCL7iFQQ7kNvwEi0YmI&_nc_oc=Admr1Vtt4rF6lNKoLcDSUz1u3FcCPQjS6EtiGTbDM1jDdO3YnTTYWxwbKCBz0pya0-5bYQbdsho4p-9xrNAMAvj5&_nc_pt=1&_nc_zt=23&_nc_ht=scontent.feoh3-1.fna&_nc_gid=9_-KZMmFREF38fQuBDdaFw&oh=00_AfH4uWJwFMcvM7Klwb6Xkw9cYDsHe-khKuJ9IwqdZUYWOg&oe=680E18F0");
   }
 
-/* Estilos para la sección Agendar cita */
 .agend-cite {
   background-color: #000000;
   color: #fff;
@@ -304,7 +301,6 @@
   transform: scale(1.1);
 }
 
-/* Estilos para el footer */
 .footer {
   width: 100%;
   display: flex;
@@ -363,14 +359,21 @@
   color: var(--black);
   margin: 0 15px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 40px;
   transition: color 0.3s ease;
 }
 
-.container-social a:hover {
-  color: #ff5722;
+.container-social .icon-facebook:hover {
+  color: #2238ff;
 }
 
+.container-social .icon-instagram:hover{
+  color: #E1306C;
+}
+
+.container-social .icon-twitter:hover{
+  color:  #1DA1F2;
+}
 .container-rights {
   margin-top: 30px;
 }
@@ -380,7 +383,91 @@
   color: #bbb;
 }
 
-/* Animaciones */
+.container-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.container-links a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.container-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000000; 
+  transition: width 0.3s ease;
+}
+
+.container-links a:hover {
+  color: #000000;
+}
+
+.container-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links li a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:not(:has(.btn-style))::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #000000; 
+  transition: width 0.3s ease;
+}
+
+/* Hover styles */
+.nav-links li a:not(:has(.btn-style)):hover {
+  color: #000000;
+}
+
+.nav-links li a:not(:has(.btn-style)):hover::after {
+  width: 100%;
+}
+
+/* Botón personalizado, opcional */
+.btn-style {
+  background-color: #000000;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-style:hover {
+  background-color: #000000;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -421,7 +508,7 @@
 
   @media (min-width: 768px) {
     body {
-      background-color: lightgreen !important;
+      background-color: lightgreen;
     }
   }
 
@@ -462,7 +549,7 @@
     }
   
     .nav-links a {
-      color: var(--black); /* Ahora se ven en fondo blanco */
+      color: var(--black);
     }
   }
   
