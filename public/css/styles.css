@@ -512,7 +512,7 @@ html,body {
   }
 }
 
-@media (min-width: 340px) {
+@media (min-width: 355px) {
   .container-links ul {
     gap: 0px;
   }
