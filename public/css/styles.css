@@ -519,6 +519,10 @@ html,body {
 
 
 @media (min-width: 768px) {
+
+  .hero-container {
+    height: 100%;
+  }
   .services {
     flex-direction: row;
     justify-content: space-between;
