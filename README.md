@@ -14,9 +14,49 @@ NY Barber App permite a clientes reservar citas con barberos de manera rápida y
 - HTML/CSS/JavaScript (Frontend)
 - Dotenv
 
+## 📁 Estructura del proyecto
+
+```
+NY-APP/
+├── public/                # Frontend estático (HTML, CSS, JS, imágenes)
+│   ├── css/
+│   ├── img/
+│   ├── js/
+│   └── index.html
+├── src/
+│   ├── config/             # Conexión a la base de datos y configuración
+│   ├── controllers/        # Lógica de cada recurso
+│   ├── middlewares/        # Middlewares de Express
+│   ├── models/             # Acceso a datos / queries
+│   ├── routes/             # Definición de rutas
+│   ├── utils/              # Funciones auxiliares
+│   └── app.js              # Configuración de la app de Express
+├── server.js               # Punto de entrada, levanta el servidor
+├── .env.example             # Variables de entorno de ejemplo
+└── package.json
+```
+
 ## ⚙️ Instalación y ejecución
 
 1. Clona el repositorio:
 ```bash
 git clone https://github.com/BrandonAlexisDev22/NY-Barber-App.git
-cd NY-Barber-App```
+cd NY-Barber-App
+```
+
+2. Instala las dependencias:
+```bash
+npm install
+```
+
+3. Copia el archivo de variables de entorno y completa tus datos de conexión a MySQL:
+```bash
+cp .env.example .env
+```
+
+4. Levanta el servidor en modo desarrollo:
+```bash
+npm run dev
+```
+
+La aplicación quedará disponible en `http://localhost:3000`.
